@@ -1,31 +1,232 @@
-/* Colors i dimensions del model de l'activitat */
-*{box-sizing:border-box}
-body{margin:0;background:#ffff00;color:#111;font:12px Georgia,"Times New Roman",serif}
-.pagina{width:79.2%;max-width:960px;margin:5px auto 0;background:#eee}
-header{height:44px;background:#666;display:flex;align-items:center;justify-content:center}
-header img{width:155px;max-height:43px;object-fit:contain}
-nav{height:37px;border-top:11px solid #eee;background:#666;text-align:center;padding:5px 0}
-nav a{margin:0 9px}
-a{color:#d59a27;text-decoration:none}a:hover{color:#111;border:1px solid #111}
-main{padding:10px 12px 9px}
-h1{font-size:18px;color:#28728a;margin:1px 0 11px}
-h3{font-size:13px;margin:11px 0 6px}
-p{line-height:1.08;margin:8px 0;text-align:justify}
-.introduccio p{font-weight:bold}
-.data{border-top:1px solid #777;border-bottom:1px solid #777;padding:9px 0;margin:13px 0 5px}
-.data img{height:12px;vertical-align:middle}
-figure{margin:5px auto 10px;text-align:center}
-.principal{display:block;width:54%;max-width:500px;height:auto;margin:auto}
-.tweet{margin:9px 0 7px;width:330px;max-width:100%;min-height:0}
-.tweet blockquote{background:white;padding:12px;border:1px solid #ddd;border-radius:10px}
-.enllac{margin:8px 0}ul{padding-left:25px;margin:8px 0}
-footer{background:#9652b7;display:flex;justify-content:center;align-items:center;gap:35px;min-height:105px;padding:8px}
-footer img{max-width:225px;max-height:85px;object-fit:contain}
-@media(max-width:650px){.pagina{width:95%}.principal{width:95%}nav a{margin:0 5px}footer img{max-width:130px}}
 
-/* Publicació amb proporcions i posició equivalents a la captura del model. */
-.tweet{width:328px;margin:9px 0 7px}.tweet-link{display:block;border:0}.tweet-link:hover{border:0}.tweet img{display:block;width:100%;height:auto}
+/* ==========================================
+   ESTILS GENERALS
+   ========================================== */
 
-/* Logo de capçalera i logo inferior del model */
-header img{width:155px;height:auto;max-height:42px}
-footer a:last-child img{width:145px;max-height:90px}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffff00;
+    color: #111;
+    font: 12px Georgia, "Times New Roman", serif;
+}
+
+/* ==========================================
+   CONTENIDOR PRINCIPAL
+   ========================================== */
+
+.pagina {
+    width: 79.2%;
+    max-width: 960px;
+    margin: 5px auto 0;
+    background: #eee;
+}
+
+/* ==========================================
+   CAPÇALERA
+   ========================================== */
+
+header {
+    height: 44px;
+    background: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 155px;
+    height: auto;
+    max-height: 42px;
+    object-fit: contain;
+}
+
+/* ==========================================
+   MENÚ DE NAVEGACIÓ
+   ========================================== */
+
+nav {
+    height: 37px;
+    border-top: 11px solid #eee;
+    background: #666;
+    text-align: center;
+    padding: 5px 0;
+}
+
+nav a {
+    margin: 0 9px;
+}
+
+/* ==========================================
+   ENLLAÇOS
+   ========================================== */
+
+a {
+    color: #d59a27;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #111;
+    border: 1px solid #111;
+}
+
+/* ==========================================
+   CONTINGUT PRINCIPAL
+   ========================================== */
+
+main {
+    padding: 10px 12px 9px;
+}
+
+h1 {
+    font-size: 18px;
+    color: #28728a;
+    margin: 1px 0 11px;
+}
+
+h3 {
+    font-size: 13px;
+    margin: 11px 0 6px;
+}
+
+p {
+    line-height: 1.08;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.introduccio p {
+    font-weight: bold;
+}
+
+/* ==========================================
+   DATA I XARXES SOCIALS
+   ========================================== */
+
+.data {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    padding: 9px 0;
+    margin: 13px 0 5px;
+}
+
+.data img {
+    height: 12px;
+    vertical-align: middle;
+}
+
+/* ==========================================
+   IMATGES PRINCIPALS
+   ========================================== */
+
+figure {
+    margin: 5px auto 10px;
+    text-align: center;
+}
+
+.principal {
+    display: block;
+    width: 54%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+/* ==========================================
+   PUBLICACIÓ DE TWITTER / X
+   ========================================== */
+
+.tweet {
+    width: 328px;
+    max-width: 100%;
+    min-height: 0;
+    margin: 9px 0 7px;
+}
+
+.tweet blockquote {
+    background: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.tweet-link {
+    display: block;
+    border: 0;
+}
+
+.tweet-link:hover {
+    border: 0;
+}
+
+.tweet img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ==========================================
+   LLISTES I ENLLAÇOS
+   ========================================== */
+
+.enllac {
+    margin: 8px 0;
+}
+
+ul {
+    padding-left: 25px;
+    margin: 8px 0;
+}
+
+/* ==========================================
+   PEU DE PÀGINA
+   ========================================== */
+
+footer {
+    background: #9652b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    min-height: 105px;
+    padding: 8px;
+}
+
+footer img {
+    max-width: 225px;
+    max-height: 85px;
+    object-fit: contain;
+}
+
+footer a:last-child img {
+    width: 145px;
+    max-height: 90px;
+}
+
+/* ==========================================
+   DISSENY RESPONSIVE - MÒBILS
+   ========================================== */
+
+@media (max-width: 650px) {
+
+    .pagina {
+        width: 95%;
+    }
+
+    .principal {
+        width: 95%;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    footer img {
+        max-width: 130px;
+    }
+
+}
